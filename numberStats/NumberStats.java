@@ -6,7 +6,15 @@ package numberStats;
 
 import java.util.Scanner;
 
+/**
+ * This class represents a program to perform various operations on a number.
+ */
 public class NumberStats {
+
+    /**
+     * The main method of the program.
+     * @param args The command-line arguments (not used in this program).
+     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a number: ");
@@ -21,26 +29,48 @@ public class NumberStats {
     }
 }
 
+/**
+ * This class represents a number with various operations.
+ */
 class MyNumber {
     private int val;
     
+    /**
+     * Constructor to initialize the number.
+     * @param val The value of the number.
+     */
     public MyNumber (int val) {
     	this.val = val;
     }
     
+    /**
+     * Gets the value of the number.
+     * @return The value of the number.
+     */
     public int getVal() {
     	return val;
     }
     
+    /**
+     * Checks if the number is odd.
+     * @return True if the number is odd, false otherwise.
+     */
     public boolean isOdd() {
     	return val % 2 != 0;
     }
     
+    /**
+     * Checks if the number is even.
+     * @return True if the number is even, false otherwise.
+     */
     public boolean isEven() {
     	return val % 2 == 0;
     }
     
-    // a method is created using syntax like this
+    /**
+     * Checks if the number is prime.
+     * @return True if the number is prime, false otherwise.
+     */
     public boolean isPrime() {
     	if (val <= 1) {
     		return false;
